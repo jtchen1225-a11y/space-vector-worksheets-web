@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L04 教案</title><style>:root{--ink:#172033;--mut:#5b6476;--line:#dfe4ee;--bg:#f6f7fb;--card:#fff;--acc:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 "Noto Sans TC","Microsoft JhengHei","PingFang TC",sans-serif}
+main{max-width:1000px;margin:0 auto;padding:24px 16px 80px}h1{font-size:28px;line-height:1.3;margin:40px 0 12px;padding-top:12px;border-top:3px solid var(--acc)}main>h1:first-child{border:0;margin-top:0}
+h2{font-size:22px;margin:30px 0 10px}h3{font-size:18px;margin:22px 0 8px}blockquote{margin:12px 0;padding:10px 14px;background:#eef4ff;border-left:4px solid var(--acc);border-radius:6px}
+.tw{overflow-x:auto;margin:10px 0}table{border-collapse:collapse;background:var(--card);min-width:560px;width:100%;font-size:15.5px}th,td{border:1px solid var(--line);padding:7px 9px;vertical-align:top;text-align:left}th{background:#f0f2f8}
+a{color:var(--acc)}.bar{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);padding:9px 16px;font-size:15px;z-index:3;display:flex;gap:14px;flex-wrap:wrap}
+mjx-container{overflow-x:auto;overflow-y:hidden;max-width:100%}@media print{.bar{display:none}body{background:#fff}h1{page-break-before:always}}</style>
+<script>window.MathJax={loader:{paths:{mathjax:'../../mathjax/es5'}},tex:{inlineMath:[['\\(','\\)']],displayMath:[['$$','$$']]},svg:{fontCache:'global'},options:{enableMenu:false}};</script>
+<script src="../../mathjax/es5/tex-svg-full.js" id="MathJax-script" async></script></head>
+<body><div class="bar"><a href="../../index.html">← 工作紙目錄</a><a href="index.html#present">開始上課</a><a href="handout.html">列印紙本</a></div><main><h1 id="L04">L04　1.2.1 空間中的點、直線與空間向量（練習課）</h1>
+<blockquote>課型：<b>練習課</b>｜工作紙 1.2.1 網頁版（共 8 份）｜教材範圍：1.2.1 空間中的點、直線與空間向量。題目取自同名工作紙（原設計 50 分鐘），這裏依練習課技能編成 40 分鐘：每層每關先做第 1 題，第 2 題放在第 4 階段。學生表現一律為「預期情況」，實際請依課堂證據調整。</blockquote>
+<h2>A. 課堂基本資料</h2>
+<ul>
+<li>年級：高中選修（相當於中五）</li>
+<li>課題：空間中的點、直線與空間向量</li>
+<li>課時：40分鐘</li>
+<li>課型：練習課</li>
+<li>核心學習目標：能寫出直線的方向向量，判斷兩直線平行、垂直，求兩直線所成的角，並判斷異面直線、求公垂線段長</li>
+<li>先備知識：1.1.3 坐標運算與建系；1.2.1 新課內容</li>
+<li>教學重點：方向向量；兩直線所成角的餘弦要取絕對值；公垂線段的兩個垂直條件</li>
+<li>學習難點：向量夾角與直線所成角的分別；含兩個參數的公垂線段</li>
+<li>本節刻意不教：平面的法向量（1.2.2）</li>
+</ul>
+<h2>B. 40分鐘教學流程表</h2>
+<div class="tw"><table><thead><tr><th>時間</th><th>階段</th><th>教師活動</th><th>學生活動</th><th>分層支持</th><th>學習證據</th><th>對應投影片</th></tr></thead><tbody>
+<tr><td>0–6 分鐘</td><td>診斷起步題</td><td>展示目標；用三道快問診斷學生在哪一關。</td><td>獨立判斷並用手勢作答。</td><td>快問不計分，用來選層。</td><td>三道診斷題票數。</td><td>1-1 今天的目標、1-2 診斷快問、1-3 診斷二：所成的角、1-4 診斷三：垂直</td></tr>
+<tr><td>6–11 分鐘</td><td>方法回顧與關鍵步驟</td><td>回顧方法與關鍵檢查步驟，只補診斷題暴露的缺口。</td><td>說出每一步的理由，自我檢查。</td><td>基礎薄弱者把秘笈抄成檢查清單。</td><td>2-2 自我檢查票數。</td><td>2-1 解題秘笈、2-2 自我檢查、2-3 秘笈二：公垂線段、2-4 代入檢驗</td></tr>
+<tr><td>11–25 分鐘</td><td>分層練習兩輪＋巡視</td><td>安排兩輪分層練習（基本功→比一比），巡視並記錄錯誤。</td><td>獨立完成兩輪，比較不同題目的做法異同。</td><td>A／B／C 同頁，可換層。</td><td>巡視觀察表、3-2／3-4 票數。</td><td>3-1 第一關：所成的角、3-2 比一比：兩種角、3-3 第二關：平行與垂直、3-4 比一比：平行</td></tr>
+<tr><td>25–35 分鐘</td><td>錯誤門診＋綜合解難</td><td>展示預期錯誤作錯誤門診，再做綜合解難與自編題。</td><td>找錯、修正、綜合解難、嘗試出題。</td><td>A 層分步；C 層推理或自編題。</td><td>錯因解釋、綜合題解題過程。</td><td>4-1 抓錯偵探、4-2 再抓一次、4-3 方向向量：再闖一題、4-4 平行與垂直：再闖一題、4-5 輪到你出題</td></tr>
+<tr><td>35–40 分鐘</td><td>出口題＋自我評估</td><td>派發出口題、學生自評；總結關鍵方法。</td><td>獨立完成出口題、舉手自評。</td><td>出口題全班同題。</td><td>出口小紙條、自評票數。</td><td>5-1 出口挑戰、5-2 我的程度、5-3 核心知識小結</td></tr>
+</tbody></table></div>
+<h3>第 1 階段　0–6 分鐘　診斷起步題（簡報：暖身診斷：你在哪一關？；螺旋：基礎辨識）</h3>
+<ul>
+<li>教師活動：展示目標；用三道快問診斷學生在哪一關。</li>
+<li>學生活動：獨立判斷並用手勢作答。</li>
+<li>教學資源：互動簡報 1-1 今天的目標、1-2 診斷快問、1-3 診斷二：所成的角、1-4 診斷三：垂直；學習單（handout.html）。</li>
+<li>理解檢查：方向向量 \((1,2,-1)\) 與 \((-2,-4,2)\)，兩直線？；\(\cos\langle \boldsymbol{v}_{1},\boldsymbol{v}_{2}\rangle =-\frac{1}{2}\)，兩直線所成的角是？；方向向量 \((1,1,0)\) 與 \((1,-1,3)\)，兩直線？</li>
+<li>可能困難（預期情況）：概念錯誤：數量積不是 0；概念錯誤：方向向量平行就不會異面；概念錯誤：直線所成的角不大於 90°</li>
+<li>應對策略：先提示、後答案（重讀題目→相關概念→部分線索→關鍵步驟→必要時示範後換相近題再試）；票數超過三成選錯時，退回本階段前一頁重講。</li>
+<li>支援提示：基礎薄弱：診斷結果只作選層依據。</li>
+</ul>
+<h3>第 2 階段　6–11 分鐘　方法回顧與關鍵步驟（簡報：解題秘笈大公開；螺旋：基礎辨識（方法與檢查））</h3>
+<ul>
+<li>教師活動：回顧方法與關鍵檢查步驟，只補診斷題暴露的缺口。</li>
+<li>學生活動：說出每一步的理由，自我檢查。</li>
+<li>教學資源：互動簡報 2-1 解題秘笈、2-2 自我檢查、2-3 秘笈二：公垂線段、2-4 代入檢驗；學習單（handout.html）。</li>
+<li>理解檢查：求兩直線所成的角，餘弦為甚麼要取絕對值？</li>
+<li>可能困難（預期情況）：概念錯誤：數量積可以是負數；概念錯誤：絕對值來自角的範圍</li>
+<li>應對策略：先提示、後答案（重讀題目→相關概念→部分線索→關鍵步驟→必要時示範後換相近題再試）；票數超過三成選錯時，退回本階段前一頁重講。</li>
+<li>支援提示：基礎薄弱：把關鍵步驟抄成清單。</li>
+</ul>
+<h3>第 3 階段　11–25 分鐘　分層練習兩輪＋巡視（簡報：兩輪闖關：基本功到變化題；螺旋：獨立應用 → 變式比較）</h3>
+<ul>
+<li>教師活動：安排兩輪分層練習（基本功→比一比），巡視並記錄錯誤。</li>
+<li>學生活動：獨立完成兩輪，比較不同題目的做法異同。</li>
+<li>教學資源：互動簡報 3-1 第一關：所成的角、3-2 比一比：兩種角、3-3 第二關：平行與垂直、3-4 比一比：平行；學習單（handout.html）。</li>
+<li>理解檢查：方向向量 \((1,-1,2)\) 與 \((2,1,-1)\)。兩直線所成角的餘弦是？；\(E,F\) 是 \(AB,BC\) 中點，\(EF\) 與 \(AC\) 的關係是？</li>
+<li>可能困難（預期情況）：概念錯誤：這是向量夾角的餘弦；程序錯誤：分母算錯；概念錯誤：\(E\) 不在 \(AC\) 上</li>
+<li>應對策略：先提示、後答案（重讀題目→相關概念→部分線索→關鍵步驟→必要時示範後換相近題再試）；票數超過三成選錯時，退回本階段前一頁重講。</li>
+<li>支援提示：動機不足：可選層、任務短；能力較高：C 層比較做法。</li>
+</ul>
+<h3>第 4 階段　25–35 分鐘　錯誤門診＋綜合解難（簡報：抓錯偵探＋綜合解難；螺旋：綜合解難）</h3>
+<ul>
+<li>教師活動：展示預期錯誤作錯誤門診，再做綜合解難與自編題。</li>
+<li>學生活動：找錯、修正、綜合解難、嘗試出題。</li>
+<li>教學資源：互動簡報 4-1 抓錯偵探、4-2 再抓一次、4-3 方向向量：再闖一題、4-4 平行與垂直：再闖一題、4-5 輪到你出題；學習單（handout.html）。</li>
+<li>理解檢查：錯因解釋、綜合題解題過程。</li>
+<li>可能困難（預期情況）：概念錯誤：直線所成的角不大於 90°，餘弦要取絕對值。；程序錯誤：公垂線段要同時垂直兩條直線，還要 \(\overrightarrow{PQ}\perp l_{2}\)。</li>
+<li>應對策略：先提示、後答案（重讀題目→相關概念→部分線索→關鍵步驟→必要時示範後換相近題再試）；票數超過三成選錯時，退回本階段前一頁重講。</li>
+<li>支援提示：疲累或注意力不足：找錯分段進行；能力較高：自編題。</li>
+</ul>
+<h3>第 5 階段　35–40 分鐘　出口題＋自我評估（簡報：最後一關＋幫自己打分；螺旋：學習證據）</h3>
+<ul>
+<li>教師活動：派發出口題、學生自評；總結關鍵方法。</li>
+<li>學生活動：獨立完成出口題、舉手自評。</li>
+<li>教學資源：互動簡報 5-1 出口挑戰、5-2 我的程度、5-3 核心知識小結；學習單（handout.html）。</li>
+<li>理解檢查：出口小紙條、自評票數。</li>
+<li>可能困難（預期情況）：起步較慢、未能用手勢表態。</li>
+<li>應對策略：先提示、後答案（重讀題目→相關概念→部分線索→關鍵步驟→必要時示範後換相近題再試）；票數超過三成選錯時，退回本階段前一頁重講。</li>
+<li>支援提示：三類學生同題。</li>
+</ul>
+<h2>C. 課堂練習</h2>
+<h3>3-1 第一關：所成的角（專注 6 分鐘）</h3>
+<div class="tw"><table><thead><tr><th>層次</th><th>題目</th><th>答案</th><th>提示階梯</th></tr></thead><tbody>
+<tr><td>A層 基礎支持</td><td>方向向量 \((1,0,1)\) 與 \((0,1,1)\)，求兩直線所成的角</td><td>60°</td><td>先求兩個方向向量夾角的餘弦。</td></tr>
+<tr><td>B層 核心達標</td><td>\(E\) 是 \(CC_{1}\) 中點，求 \(AE\) 與 \(BD_{1}\) 所成角的餘弦</td><td>\(\frac{\sqrt{3}}{9}\)</td><td>\(\overrightarrow{AE}=(-2,2,1)\)，\(\overrightarrow{BD_1}=(-2,-2,2)\)。</td></tr>
+<tr><td>C層 延伸挑戰</td><td>\(l_{1}\) 過 \(A(1,0,0)\)，方向 \((0,1,1)\)；\(l_{2}\) 過 \(B(0,1,0)\)，方向 \((1,0,-1)\)。證明兩直線異面</td><td>方向不平行，且 \(\overrightarrow{AB}\) 與兩個方向向量不共面</td><td>不設提示，鼓勵先自行解釋</td></tr>
+</tbody></table></div>
+<h3>3-3 第二關：平行與垂直（專注 7 分鐘）</h3>
+<div class="tw"><table><thead><tr><th>層次</th><th>題目</th><th>答案</th><th>提示階梯</th></tr></thead><tbody>
+<tr><td>A層 基礎支持</td><td>判斷 \(A_{1}C\) 與 \(BD\) 是否垂直</td><td>垂直：\((-2,2,-2)\cdot(-2,-2,0)=0\)</td><td>寫出 \(\overrightarrow{A_1C}\)、\(\overrightarrow{BD}\)，看數量積。</td></tr>
+<tr><td>B層 核心達標</td><td>\(M\)、\(N\) 是 \(A_{1}B_{1}\)、\(BC\) 的中點。求 \(MN\) 與 \(AD\) 所成角的餘弦</td><td>\(\frac{\sqrt{6}}{6}\)</td><td>\(M(2,1,2)\)，\(N(1,2,0)\)。</td></tr>
+<tr><td>C層 延伸挑戰</td><td>\(M\) 在 \(A_{1}C\) 上，\(\overrightarrow{A_1M}=\lambda\overrightarrow{A_1C}\)。求 \(\lambda\)，使 \(MB\perp A_{1}C\)</td><td>\(\lambda=\frac{2}{3}\)</td><td>不設提示，鼓勵先自行解釋</td></tr>
+</tbody></table></div>
+<h3>4-3 方向向量：再闖一題</h3>
+<div class="tw"><table><thead><tr><th>層次</th><th>題目</th><th>答案</th><th>提示階梯</th></tr></thead><tbody>
+<tr><td>A層 基礎支持</td><td>\(A(1,2,0)\)，\(B(3,1,2)\)。寫出直線 \(AB\) 的兩個不同方向向量</td><td>\((2,-1,2)\)、\((-2,1,-2)\) 等</td><td>\(\overrightarrow{AB}\) 和它的非零倍數都是方向向量。</td></tr>
+<tr><td>B層 核心達標</td><td>方向向量 \((2,-1,3)\) 與 \((4,k,6)\)。兩直線平行時 \(k\) 是多少？垂直時呢？</td><td>平行 \(k=-2\)；垂直 \(k=26\)</td><td>平行：成倍數；垂直：數量積為 0。</td></tr>
+<tr><td>C層 延伸挑戰</td><td>\(l_{1}\) 過原點，方向 \((1,0,0)\)；\(l_{2}\) 過 \((0,0,1)\)，方向 \((0,1,0)\)。求公垂線段長和兩個垂足</td><td>長 1；垂足 \((0,0,0)\) 和 \((0,0,1)\)</td><td>不設提示，鼓勵先自行解釋</td></tr>
+</tbody></table></div>
+<h3>4-4 平行與垂直：再闖一題</h3>
+<div class="tw"><table><thead><tr><th>層次</th><th>題目</th><th>答案</th><th>提示階梯</th></tr></thead><tbody>
+<tr><td>A層 基礎支持</td><td>\(E,F\) 是 \(AB,BC\) 中點，寫出 \(\overrightarrow{EF}\) 和 \(\overrightarrow{AC}\)</td><td>\(\overrightarrow{EF}=(-1,1,0)\)，\(\overrightarrow{AC}=(-2,2,0)\)</td><td>\(E(2,1,0)\)，\(F(1,2,0)\)。</td></tr>
+<tr><td>B層 核心達標</td><td>證明 \(BD_{1}\perp AC\)，且 \(BD_{1}\perp AB_{1}\)</td><td>與 \((-2,2,0)\)、\((0,2,2)\) 的數量積都是 0</td><td>\(\overrightarrow{BD_1}=(-2,-2,2)\)，分別求數量積。</td></tr>
+<tr><td>C層 延伸挑戰</td><td>承 3-3 C 層：用 \(\lambda\) 寫出 \(\vert \overrightarrow{MB}\vert ^{2}\)，說明為甚麼 \(\lambda=\frac{2}{3}\) 時 \(MB\) 最短</td><td>\(\vert \overrightarrow{MB}\vert ^{2}=12\lambda^{2}-16\lambda+8\)，\(\lambda=\frac{2}{3}\) 時最小，正是垂足</td><td>不設提示，鼓勵先自行解釋</td></tr>
+</tbody></table></div>
+<h3>4-5 輪到你出題</h3>
+<div class="tw"><table><thead><tr><th>層次</th><th>題目</th><th>答案</th><th>提示階梯</th></tr></thead><tbody>
+<tr><td>A層 基礎支持</td><td>把 3-1 A 層的第二個方向向量改成 \((0,1,-1)\)，所成的角是？</td><td>仍是 60°</td><td>餘弦是負數時怎樣處理？</td></tr>
+<tr><td>B層 核心達標</td><td>3-1 B 層若 \(E\) 改為 \(C_{1}\)，\(AC_{1}\) 與 \(BD_{1}\) 所成角的餘弦是？</td><td>\(\frac{1}{3}\)</td><td>\(\overrightarrow{AC_1}=(-2,2,2)\)。</td></tr>
+<tr><td>C層 延伸挑戰</td><td>自編一題「正方體中求兩直線所成角」的題目，並寫出答案</td><td>答案因題而異；檢查餘弦在 0 與 1 之間</td><td>不設提示，鼓勵先自行解釋</td></tr>
+</tbody></table></div>
+<h3>巡視觀察表（也印在 handout.html 的教師版）</h3>
+<div class="tw"><table><thead><tr><th>觀察重點（錯誤類型）</th><th>人數</th><th>用於錯誤分析</th></tr></thead><tbody>
+<tr><td>餘弦沒有取絕對值（概念）</td><td></td><td>☐</td></tr>
+<tr><td>讀錯點的坐標（程序）</td><td></td><td>☐</td></tr>
+<tr><td>分母漏乘一個長度（粗心）</td><td></td><td>☐</td></tr>
+<tr><td>把 D 當成 A 的位置（程序）</td><td></td><td>☐</td></tr>
+<tr><td>平行沒有排除重合（概念）</td><td></td><td>☐</td></tr>
+<tr><td>含 λ 的點寫錯（程序）</td><td></td><td>☐</td></tr>
+<tr><td>其他：</td><td></td><td>☐</td></tr>
+</tbody></table></div>
+<h3>不同學生的支援</h3>
+<div class="tw"><table><thead><tr><th>學生情況</th><th>本節做法</th></tr></thead><tbody>
+<tr><td>基礎薄弱</td><td>從 A 層與提示階梯開始，先確認先備知識地圖中的舊知識；成功後逐步減少提示，不長期只做低層次題。</td></tr>
+<tr><td>動機不足</td><td>任務短而明確、可自選層次、先猜後驗，讓學生看到可達成的進步；不等同懶惰。</td></tr>
+<tr><td>疲累或注意力不足</td><td>每段都有短回應（手勢、拖滑桿）；任務分段；個別關心，持續異常疲倦依校方程序跟進，不當成紀律問題。</td></tr>
+<tr><td>能力較高</td><td>做 C 層的解釋、比較、推理與遷移；不固定安排為其他學生的助手。</td></tr>
+</tbody></table></div>
+<h2>D. 典型錯誤分析</h2>
+<p>以下均為「預期錯誤」（未取自真實學生作答），教師可換成當堂收集、去識別化的例子。</p>
+<h3>4-1 抓錯偵探：這個角可以嗎？</h3>
+<ul>
+<li>題目：方向向量 \((1,0,-1)\) 與 \((0,1,1)\)，求兩直線所成的角。</li>
+<li>錯誤示例：\(\cos\langle \boldsymbol{v}_{1},\boldsymbol{v}_{2}\rangle =\frac{-1}{\sqrt{2}\times\sqrt{2}}=-\frac{1}{2}\) → 所以兩直線所成的角是 120°（錯在第 2 步）</li>
+<li>可能原因：概念錯誤：直線所成的角不大於 90°，餘弦要取絕對值。</li>
+<li>診斷問題：這個解法哪一步開始出現問題？為甚麼這樣計算不正確？怎樣檢查答案是否合理？</li>
+<li>教師引導方式：不公開學生身份；先讓學生指出步驟，再追問成因，最後由學生修正。</li>
+<li>正確做法：\(\cos\theta=\frac{1}{2}\)，所成的角是 60°</li>
+<li>修正後練習：3-1 B 層若 \(E\) 改為 \(C_{1}\)，\(AC_{1}\) 與 \(BD_{1}\) 所成角的餘弦是？</li>
+</ul>
+<h3>4-2 再抓一次：要垂直幾條直線？</h3>
+<ul>
+<li>題目：3-1 C 層的兩條直線，\(P(1,t,t)\) 在 \(l_{1}\) 上，\(Q(s,1,-s)\) 在 \(l_{2}\) 上，求公垂線段 \(PQ\) 的長。</li>
+<li>錯誤示例：只列 \(\overrightarrow{PQ}\perp l_{1}\)，得 \(s=1-2t\) → 取 \(t=0\)，\(s=1\)，\(\vert PQ\vert =\sqrt{2}\)（錯在第 1 步）</li>
+<li>可能原因：程序錯誤：公垂線段要同時垂直兩條直線，還要 \(\overrightarrow{PQ}\perp l_{2}\)。</li>
+<li>診斷問題：這個解法哪一步開始出現問題？為甚麼這樣計算不正確？怎樣檢查答案是否合理？</li>
+<li>教師引導方式：不公開學生身份；先讓學生指出步驟，再追問成因，最後由學生修正。</li>
+<li>正確做法：兩條方程聯立：\(t=s=\frac{1}{3}\)，\(\vert PQ\vert =\frac{2\sqrt{3}}{3}\)</li>
+<li>修正後練習：3-1 B 層若 \(E\) 改為 \(C_{1}\)，\(AC_{1}\) 與 \(BD_{1}\) 所成角的餘弦是？</li>
+</ul>
+<h2>E. 出口題及評估</h2>
+<ul>
+<li>出口題：棱長 2 的正方體（\(D\) 為原點），\(E\) 是 \(A_{1}B_{1}\) 中點。(1) 寫出 \(\overrightarrow{AE}\) 與 \(\overrightarrow{BC_1}\)；(2) 求 \(AE\) 與 \(BC_{1}\) 所成角的餘弦。</li>
+<li>參考答案：(1) \((0,1,2)\)，\((-2,0,2)\)；(2) \(\frac{\sqrt{10}}{5}\)</li>
+<li>時間：2～3 分鐘，獨立完成。</li>
+</ul>
+<div class="tw"><table><thead><tr><th>結果</th><th>判準及下一節安排</th></tr></thead><tbody>
+<tr><td>已掌握</td><td>兩小題全對，餘弦取正值並化簡 → 進入 1.2.2 法向量，可做第二關 C 層</td></tr>
+<tr><td>部分掌握</td><td>方向向量對，但餘弦取了負值或計算有誤 → 下一節課首做一題「向量夾角與直線所成角」比較</td></tr>
+<tr><td>尚未掌握</td><td>寫不出兩個向量的坐標 → 小組重做 1.1.3 的讀點，再做第一關 A 層</td></tr>
+</tbody></table></div>
+<h2>F. 課後反思（上課後由教師依真實證據填寫）</h2>
+<ul>
+<li>本節課最有效的設計：</li>
+<li>學生最常見的困難：</li>
+<li>需要個別跟進的學生：</li>
+<li>下一節課的調整：</li>
+</ul>
+<h2>G. 螺旋設計與學習追蹤</h2>
+<p><b>本課型路徑</b>：能力提升螺旋：基礎辨識 → 獨立應用 → 變式比較 → 綜合解難</p>
+<div class="tw"><table><thead><tr><th>時間</th><th>階段</th><th>螺旋位置</th></tr></thead><tbody>
+<tr><td>0–6 分鐘</td><td>診斷起步題</td><td>基礎辨識</td></tr>
+<tr><td>6–11 分鐘</td><td>方法回顧與關鍵步驟</td><td>基礎辨識（方法與檢查）</td></tr>
+<tr><td>11–25 分鐘</td><td>分層練習兩輪＋巡視</td><td>獨立應用 → 變式比較</td></tr>
+<tr><td>25–35 分鐘</td><td>錯誤門診＋綜合解難</td><td>綜合解難</td></tr>
+<tr><td>35–40 分鐘</td><td>出口題＋自我評估</td><td>學習證據</td></tr>
+</tbody></table></div>
+<h3>1. 先備知識地圖</h3>
+<div class="tw"><table><thead><tr><th>舊知識</th><th>本課怎樣用</th><th>怎樣確認（哪一頁或哪一題）</th><th>不足時的補救</th></tr></thead><tbody>
+<tr><td>向量平行的坐標條件</td><td>判斷兩直線平行</td><td>1-2 診斷一</td><td>回到 1.1.3 的倍數關係</td></tr>
+<tr><td>夾角的餘弦</td><td>求兩直線所成的角</td><td>1-3 診斷二</td><td>回到 2-1，再做 3-2</td></tr>
+<tr><td>數量積為 0</td><td>判斷兩直線垂直</td><td>1-4 診斷三</td><td>重做一次數量積</td></tr>
+</tbody></table></div>
+<h3>2. 螺旋深化路徑</h3>
+<ul>
+<li>學生已經理解：已學過方向向量、直線所成的角和公垂線段的定義。</li>
+<li>本次新增的理解：分清「向量的夾角」與「直線所成的角」：直線沒有方向，所以餘弦取絕對值；公垂線段要同時滿足兩個垂直條件。</li>
+<li>之後會延伸到：1.2.2 引入法向量；1.2.3、1.2.4 用同一套做法求線面角和面面角。</li>
+</ul>
+<h3>3. 分層學習任務</h3>
+<div class="tw"><table><thead><tr><th>學生</th><th>任務層</th><th>支持方式</th><th>完成後</th></tr></thead><tbody>
+<tr><td>基礎薄弱</td><td>A 層</td><td>提示階梯、附圖與第一步線索</td><td>嘗試 B 層</td></tr>
+<tr><td>一般</td><td>B 層</td><td>必要時看提示</td><td>嘗試 C 層</td></tr>
+<tr><td>能力較高</td><td>C 層</td><td>少提示，要求解釋或比較</td><td>自編變式題</td></tr>
+</tbody></table></div>
+<p>分層指任務與支持不同，不是固定學生標籤；學生可依表現隨時換層。</p>
+<h3>4. 間隔重現計劃</h3>
+<div class="tw"><table><thead><tr><th>概念</th><th>何時再出現</th><th>形式（改變題目或情境）</th></tr></thead><tbody>
+<tr><td>讀點與方向向量</td><td>下一節（1.2.2）</td><td>求法向量時再用</td></tr>
+<tr><td>兩直線所成的角</td><td>約一週後</td><td>延遲檢測：換兩條直線</td></tr>
+<tr><td>餘弦取絕對值</td><td>約一個月後（1.2.4）</td><td>兩平面所成的角</td></tr>
+</tbody></table></div>
+<h3>5. 學習證據追蹤</h3>
+<ul>
+<li>出口題（當堂）：見 E 節。</li>
+<li>延遲檢測（約一週後，不提前通知、不先複習、不計分）：棱長 2 的正方體（\(D\) 為原點），\(F\) 是 \(CC_{1}\) 中點。求 \(D_{1}F\) 與 \(AB_{1}\) 所成角的餘弦。　答案：\(\frac{\sqrt{10}}{10}\)</li>
+</ul>
+<div class="tw"><table><thead><tr><th>出口題</th><th>延遲檢測</th><th>判斷</th><th>跟進</th></tr></thead><tbody>
+<tr><td>已掌握</td><td>已掌握</td><td>真正掌握</td><td>進入更高層次任務</td></tr>
+<tr><td>已掌握</td><td>未掌握</td><td>短暫學會</td><td>增加間隔重現，改變情境再練</td></tr>
+<tr><td>未掌握</td><td>已掌握</td><td>延後學會</td><td>了解後續哪些安排有效</td></tr>
+<tr><td>未掌握</td><td>未掌握</td><td>尚未掌握</td><td>找出成因，小組或個別重建概念</td></tr>
+</tbody></table></div>
+<h2>教案品質檢查</h2>
+<ul>
+<li>☑ 是否具有明確、可觀察的學習目標？</li>
+<li>☑ 各教學階段的總時間是否為40分鐘？</li>
+<li>☑ 是否讓不同程度學生都有明確任務？</li>
+<li>☑ 是否設計至少兩個理解檢查點？</li>
+<li>☑ 是否安排學生獨立思考及解題？</li>
+<li>☑ 是否預測典型數學錯誤？</li>
+<li>☑ 是否提供分層支持？</li>
+<li>☑ 是否包含有效的出口題？</li>
+<li>☑ 是否說明如何利用學習證據調整教學？</li>
+<li>☑ 是否考慮教師實際工作量及課堂可行性？</li>
+<li>☑ 簡報是否至少 25 頁（含階段頁），最後一頁是否為本節核心知識小結？</li>
+<li>☑ 是否標明各階段在螺旋路徑的位置？</li>
+<li>☑ 是否有先備知識地圖？</li>
+<li>☑ 是否說明本次比過去增加了哪些新理解？</li>
+<li>☑ 是否規劃間隔重現？</li>
+<li>☑ 是否設計延遲檢測，能分辨短暫學會與真正掌握？</li>
+</ul></main></body></html>

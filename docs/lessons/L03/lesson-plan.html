@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L03 教案</title><style>:root{--ink:#172033;--mut:#5b6476;--line:#dfe4ee;--bg:#f6f7fb;--card:#fff;--acc:#2563eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 "Noto Sans TC","Microsoft JhengHei","PingFang TC",sans-serif}
+main{max-width:1000px;margin:0 auto;padding:24px 16px 80px}h1{font-size:28px;line-height:1.3;margin:40px 0 12px;padding-top:12px;border-top:3px solid var(--acc)}main>h1:first-child{border:0;margin-top:0}
+h2{font-size:22px;margin:30px 0 10px}h3{font-size:18px;margin:22px 0 8px}blockquote{margin:12px 0;padding:10px 14px;background:#eef4ff;border-left:4px solid var(--acc);border-radius:6px}
+.tw{overflow-x:auto;margin:10px 0}table{border-collapse:collapse;background:var(--card);min-width:560px;width:100%;font-size:15.5px}th,td{border:1px solid var(--line);padding:7px 9px;vertical-align:top;text-align:left}th{background:#f0f2f8}
+a{color:var(--acc)}.bar{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);padding:9px 16px;font-size:15px;z-index:3;display:flex;gap:14px;flex-wrap:wrap}
+mjx-container{overflow-x:auto;overflow-y:hidden;max-width:100%}@media print{.bar{display:none}body{background:#fff}h1{page-break-before:always}}</style>
+<script>window.MathJax={loader:{paths:{mathjax:'../../mathjax/es5'}},tex:{inlineMath:[['\\(','\\)']],displayMath:[['$$','$$']]},svg:{fontCache:'global'},options:{enableMenu:false}};</script>
+<script src="../../mathjax/es5/tex-svg-full.js" id="MathJax-script" async></script></head>
+<body><div class="bar"><a href="../../index.html">← 工作紙目錄</a><a href="index.html#present">開始上課</a><a href="handout.html">列印紙本</a></div><main><h1 id="L03">L03　1.1.3 空間向量的坐標與空間直角坐標系（練習課）</h1>
+<blockquote>課型：<b>練習課</b>｜工作紙 1.1.3 網頁版（共 8 份）｜教材範圍：1.1.3 空間向量的坐標與空間直角坐標系。題目取自同名工作紙（原設計 50 分鐘），這裏依練習課技能編成 40 分鐘：每層每關先做第 1 題，第 2 題放在第 4 階段。學生表現一律為「預期情況」，實際請依課堂證據調整。</blockquote>
+<h2>A. 課堂基本資料</h2>
+<ul>
+<li>年級：高中選修（相當於中五）</li>
+<li>課題：空間向量的坐標與空間直角坐標系</li>
+<li>課時：40分鐘</li>
+<li>課型：練習課</li>
+<li>核心學習目標：能用坐標做線性運算與數量積、求長度與夾角、判斷平行與垂直，並能建立空間直角坐標系讀出點的坐標</li>
+<li>先備知識：1.1.2 基底；平面向量的坐標運算；1.1.3 新課內容</li>
+<li>教學重點：終點減始點；數量積、長度、夾角公式；建系與讀點</li>
+<li>學習難點：坐標有 0 時判斷平行；讀點時 x、y 次序；含未知數的垂直條件</li>
+<li>本節刻意不教：方向向量、法向量的名稱（1.2.1、1.2.2）</li>
+</ul>
+<h2>B. 40分鐘教學流程表</h2>
+<div class="tw"><table><thead><tr><th>時間</th><th>階段</th><th>教師活動</th><th>學生活動</th><th>分層支持</th><th>學習證據</th><th>對應投影片</th></tr></thead><tbody>
+<tr><td>0–6 分鐘</td><td>診斷起步題</td><td>展示目標；用三道快問診斷學生在哪一關。</td><td>獨立判斷並用手勢作答。</td><td>快問不計分，用來選層。</td><td>三道診斷題票數。</td><td>1-1 今天的目標、1-2 診斷快問、1-3 診斷二：長度、1-4 診斷三：對稱</td></tr>
+<tr><td>6–11 分鐘</td><td>方法回顧與關鍵步驟</td><td>回顧方法與關鍵檢查步驟，只補診斷題暴露的缺口。</td><td>說出每一步的理由，自我檢查。</td><td>基礎薄弱者把秘笈抄成檢查清單。</td><td>2-2 自我檢查票數。</td><td>2-1 解題秘笈、2-2 自我檢查、2-3 秘笈二：建系、2-4 代入檢驗</td></tr>
+<tr><td>11–25 分鐘</td><td>分層練習兩輪＋巡視</td><td>安排兩輪分層練習（基本功→比一比），巡視並記錄錯誤。</td><td>獨立完成兩輪，比較不同題目的做法異同。</td><td>A／B／C 同頁，可換層。</td><td>巡視觀察表、3-2／3-4 票數。</td><td>3-1 第一關：坐標運算、3-2 比一比：有 0 的坐標、3-3 第二關：坐標系、3-4 比一比：對稱</td></tr>
+<tr><td>25–35 分鐘</td><td>錯誤門診＋綜合解難</td><td>展示預期錯誤作錯誤門診，再做綜合解難與自編題。</td><td>找錯、修正、綜合解難、嘗試出題。</td><td>A 層分步；C 層推理或自編題。</td><td>錯因解釋、綜合題解題過程。</td><td>4-1 抓錯偵探、4-2 再抓一次、4-3 坐標運算：再闖一題、4-4 坐標系：再闖一題、4-5 輪到你出題</td></tr>
+<tr><td>35–40 分鐘</td><td>出口題＋自我評估</td><td>派發出口題、學生自評；總結關鍵方法。</td><td>獨立完成出口題、舉手自評。</td><td>出口題全班同題。</td><td>出口小紙條、自評票數。</td><td>5-1 出口挑戰、5-2 我的程度、5-3 核心知識小結</td></tr>
+</tbody></table></div>
+<h3>第 1 階段　0–6 分鐘　診斷起步題（簡報：暖身診斷：你在哪一關？；螺旋：基礎辨識）</h3>
+<ul>
+<li>教師活動：展示目標；用三道快問診斷學生在哪一關。</li>
+<li>學生活動：獨立判斷並用手勢作答。</li>
+<li>教學資源：互動簡報 1-1 今天的目標、1-2 診斷快問、1-3 診斷二：長度、1-4 診斷三：對稱；學習單（handout.html）。</li>
+<li>理解檢查：\(A(1,2,3)\)，\(B(4,0,5)\)，\(\overrightarrow{AB}=\)？；\(\boldsymbol{a}=(1,2,-2)\)，\(\vert \boldsymbol{a}\vert =\)？；\(P(2,-3,1)\) 關於 \(xOy\) 平面的對稱點是？</li>
+<li>可能困難（預期情況）：概念錯誤：算成 \(A-B\)；概念錯誤：把坐標相加；粗心失誤：忘了開方</li>
+<li>應對策略：先提示、後答案（重讀題目→相關概念→部分線索→關鍵步驟→必要時示範後換相近題再試）；票數超過三成選錯時，退回本階段前一頁重講。</li>
+<li>支援提示：基礎薄弱：診斷結果只作選層依據。</li>
+</ul>
+<h3>第 2 階段　6–11 分鐘　方法回顧與關鍵步驟（簡報：解題秘笈大公開；螺旋：基礎辨識（方法與檢查））</h3>
+<ul>
+<li>教師活動：回顧方法與關鍵檢查步驟，只補診斷題暴露的缺口。</li>
+<li>學生活動：說出每一步的理由，自我檢查。</li>
+<li>教學資源：互動簡報 2-1 解題秘笈、2-2 自我檢查、2-3 秘笈二：建系、2-4 代入檢驗；學習單（handout.html）。</li>
+<li>理解檢查：\(\cos\langle \boldsymbol{a},\boldsymbol{b}\rangle =-\frac{1}{2}\)，\(\langle \boldsymbol{a},\boldsymbol{b}\rangle \) 是？</li>
+<li>可能困難（預期情況）：概念錯誤：向量夾角不用取絕對值；概念錯誤：餘弦可以是負數</li>
+<li>應對策略：先提示、後答案（重讀題目→相關概念→部分線索→關鍵步驟→必要時示範後換相近題再試）；票數超過三成選錯時，退回本階段前一頁重講。</li>
+<li>支援提示：基礎薄弱：把關鍵步驟抄成清單。</li>
+</ul>
+<h3>第 3 階段　11–25 分鐘　分層練習兩輪＋巡視（簡報：兩輪闖關：基本功到變化題；螺旋：獨立應用 → 變式比較）</h3>
+<ul>
+<li>教師活動：安排兩輪分層練習（基本功→比一比），巡視並記錄錯誤。</li>
+<li>學生活動：獨立完成兩輪，比較不同題目的做法異同。</li>
+<li>教學資源：互動簡報 3-1 第一關：坐標運算、3-2 比一比：有 0 的坐標、3-3 第二關：坐標系、3-4 比一比：對稱；學習單（handout.html）。</li>
+<li>理解檢查：\(\boldsymbol{a}=(0,2,-1)\)，\(\boldsymbol{b}=(0,-4,2)\) 平行嗎？；\(P(1,-2,3)\) 關於 \(x\) 軸的對稱點是？</li>
+<li>可能困難（預期情況）：概念錯誤：坐標有 0 時不能用比值判斷；概念錯誤：看是否有 \(\lambda\) 使 \(\boldsymbol{b}=\lambda\boldsymbol{a}\)；概念錯誤：這是關於 \(yOz\) 平面對稱</li>
+<li>應對策略：先提示、後答案（重讀題目→相關概念→部分線索→關鍵步驟→必要時示範後換相近題再試）；票數超過三成選錯時，退回本階段前一頁重講。</li>
+<li>支援提示：動機不足：可選層、任務短；能力較高：C 層比較做法。</li>
+</ul>
+<h3>第 4 階段　25–35 分鐘　錯誤門診＋綜合解難（簡報：抓錯偵探＋綜合解難；螺旋：綜合解難）</h3>
+<ul>
+<li>教師活動：展示預期錯誤作錯誤門診，再做綜合解難與自編題。</li>
+<li>學生活動：找錯、修正、綜合解難、嘗試出題。</li>
+<li>教學資源：互動簡報 4-1 抓錯偵探、4-2 再抓一次、4-3 坐標運算：再闖一題、4-4 坐標系：再闖一題、4-5 輪到你出題；學習單（handout.html）。</li>
+<li>理解檢查：錯因解釋、綜合題解題過程。</li>
+<li>可能困難（預期情況）：概念錯誤：應是「終點減始點」；長度碰巧一樣，但方向相反。；粗心失誤：分母漏乘 \(\vert \boldsymbol{b}\vert =\sqrt{5}\)。</li>
+<li>應對策略：先提示、後答案（重讀題目→相關概念→部分線索→關鍵步驟→必要時示範後換相近題再試）；票數超過三成選錯時，退回本階段前一頁重講。</li>
+<li>支援提示：疲累或注意力不足：找錯分段進行；能力較高：自編題。</li>
+</ul>
+<h3>第 5 階段　35–40 分鐘　出口題＋自我評估（簡報：最後一關＋幫自己打分；螺旋：學習證據）</h3>
+<ul>
+<li>教師活動：派發出口題、學生自評；總結關鍵方法。</li>
+<li>學生活動：獨立完成出口題、舉手自評。</li>
+<li>教學資源：互動簡報 5-1 出口挑戰、5-2 我的程度、5-3 核心知識小結；學習單（handout.html）。</li>
+<li>理解檢查：出口小紙條、自評票數。</li>
+<li>可能困難（預期情況）：起步較慢、未能用手勢表態。</li>
+<li>應對策略：先提示、後答案（重讀題目→相關概念→部分線索→關鍵步驟→必要時示範後換相近題再試）；票數超過三成選錯時，退回本階段前一頁重講。</li>
+<li>支援提示：三類學生同題。</li>
+</ul>
+<h2>C. 課堂練習</h2>
+<h3>3-1 第一關：坐標運算（專注 6 分鐘）</h3>
+<div class="tw"><table><thead><tr><th>層次</th><th>題目</th><th>答案</th><th>提示階梯</th></tr></thead><tbody>
+<tr><td>A層 基礎支持</td><td>\(\boldsymbol{a}=(2,-1,3)\)，\(\boldsymbol{b}=(-1,2,1)\)。求：(1) \(\boldsymbol{a}+\boldsymbol{b}\)；(2) \(2\boldsymbol{a}-\boldsymbol{b}\)；(3) \(\boldsymbol{a}\cdot\boldsymbol{b}\)</td><td>(1) \((1,1,4)\)；(2) \((5,-4,5)\)；(3) \(-1\)</td><td>對應坐標相加減。；數量積：對應坐標相乘再相加。</td></tr>
+<tr><td>B層 核心達標</td><td>\(\boldsymbol{a}=(2,-1,k)\)，\(\boldsymbol{b}=(-4,2,-2)\)。(1) \(\boldsymbol{a}\parallel\boldsymbol{b}\)，求 \(k\)；(2) \(\boldsymbol{a}\perp\boldsymbol{b}\)，求 \(k\)</td><td>(1) \(k=1\)；(2) \(k=-5\)</td><td>(1) 找 \(\lambda\) 使 \(\boldsymbol{b}=\lambda\boldsymbol{a}\)。；(2) 數量積為 0。</td></tr>
+<tr><td>C層 延伸挑戰</td><td>求所有 \(\boldsymbol{c}\)，使 \(\boldsymbol{c}\) 同時垂直 \((1,1,0)\) 與 \((0,1,1)\)，且 \(\vert \boldsymbol{c}\vert =\sqrt{3}\)</td><td>\((1,-1,1)\) 或 \((-1,1,-1)\)</td><td>不設提示，鼓勵先自行解釋</td></tr>
+</tbody></table></div>
+<h3>3-3 第二關：坐標系（專注 7 分鐘）</h3>
+<div class="tw"><table><thead><tr><th>層次</th><th>題目</th><th>答案</th><th>提示階梯</th></tr></thead><tbody>
+<tr><td>A層 基礎支持</td><td>(1) 寫出 \(B\)、\(B_{1}\)、\(D_{1}\) 的坐標；(2) 求 \(\vert \overrightarrow{DB_1}\vert \)</td><td>(1) \(B(2,4,0)\)，\(B_{1}(2,4,2)\)，\(D_{1}(0,0,2)\)；(2) \(2\sqrt{6}\)</td><td>每個點由原點沿三條軸各走多少？</td></tr>
+<tr><td>B層 核心達標</td><td>\(E\)、\(F\) 是 \(BB_{1}\)、\(C_{1}D_{1}\) 的中點。求：(1) \(\vert \overrightarrow{EF}\vert \)；(2) \(\cos\langle \overrightarrow{EF},\overrightarrow{DB_1}\rangle \)</td><td>(1) 3；(2) \(-\frac{5\sqrt{6}}{18}\)</td><td>\(E(2,4,1)\)，\(F(0,2,2)\)。</td></tr>
+<tr><td>C層 延伸挑戰</td><td>棱 \(CC_{1}\) 上有沒有點 \(M\)，使 \(AM\perp DB_{1}\)？說明理由</td><td>沒有：設 \(M(0,4,t)\)，\(12+2t=0\) 得 \(t=-6\)，不在棱上</td><td>不設提示，鼓勵先自行解釋</td></tr>
+</tbody></table></div>
+<h3>4-3 坐標運算：再闖一題</h3>
+<div class="tw"><table><thead><tr><th>層次</th><th>題目</th><th>答案</th><th>提示階梯</th></tr></thead><tbody>
+<tr><td>A層 基礎支持</td><td>\(\boldsymbol{a}=(1,-2,2)\)。求 \(\vert \boldsymbol{a}\vert \) 和與 \(\boldsymbol{a}\) 同方向的單位向量</td><td>3；\((\frac{1}{3},-\frac{2}{3},\frac{2}{3})\)</td><td>單位向量 \(=\frac{\boldsymbol{a}}{\vert \boldsymbol{a}\vert }\)。</td></tr>
+<tr><td>B層 核心達標</td><td>\(\boldsymbol{a}=(1,1,0)\)，\(\boldsymbol{b}=(-1,0,2)\)，\((k\boldsymbol{a}+\boldsymbol{b})\perp\boldsymbol{a}\)，求 \(k\)</td><td>\(k=\frac{1}{2}\)</td><td>展開：\(k\vert \boldsymbol{a}\vert ^{2}+\boldsymbol{a}\cdot\boldsymbol{b}=0\)。</td></tr>
+<tr><td>C層 延伸挑戰</td><td>\(A(1,0,1)\)，\(B(2,1,0)\)，\(C(0,2,2)\)。判斷 \(\triangle ABC\) 的形狀並求面積</td><td>直角三角形（直角在 \(A\)），面積 \(\frac{3\sqrt{2}}{2}\)</td><td>不設提示，鼓勵先自行解釋</td></tr>
+</tbody></table></div>
+<h3>4-4 坐標系：再闖一題</h3>
+<div class="tw"><table><thead><tr><th>層次</th><th>題目</th><th>答案</th><th>提示階梯</th></tr></thead><tbody>
+<tr><td>A層 基礎支持</td><td>求 \(AC_{1}\) 的中點坐標</td><td>\((1,2,1)\)</td><td>中點坐標是兩端坐標的平均。</td></tr>
+<tr><td>B層 核心達標</td><td>\(P(1,-2,3)\) 關於 (1) \(yOz\) 平面、(2) 原點的對稱點</td><td>(1) \((-1,-2,3)\)；(2) \((-1,2,-3)\)</td><td>先想哪些坐標不變。</td></tr>
+<tr><td>C層 延伸挑戰</td><td>在棱 \(A_{1}B_{1}\) 上求點 \(N\)，使 \(DN\perp AC\)</td><td>\(N(2,1,2)\)，即 \(A_{1}N=1\)</td><td>不設提示，鼓勵先自行解釋</td></tr>
+</tbody></table></div>
+<h3>4-5 輪到你出題</h3>
+<div class="tw"><table><thead><tr><th>層次</th><th>題目</th><th>答案</th><th>提示階梯</th></tr></thead><tbody>
+<tr><td>A層 基礎支持</td><td>把 3-1 A 層的 \(\boldsymbol{b}\) 改成 \((1,2,0)\)，求 \(\boldsymbol{a}\cdot\boldsymbol{b}\)。兩個向量有甚麼關係？</td><td>0，互相垂直</td><td>數量積是 0 代表甚麼？</td></tr>
+<tr><td>B層 核心達標</td><td>把 3-3 的 \(DC\) 改成 2，再求 \(\vert \overrightarrow{DB_1}\vert \)</td><td>\(2\sqrt{3}\)</td><td>\(B_{1}(2,2,2)\)。</td></tr>
+<tr><td>C層 延伸挑戰</td><td>自編一題「含未知數的垂直或平行」題目，並寫出答案</td><td>答案因題而異；代回檢查數量積或倍數關係</td><td>不設提示，鼓勵先自行解釋</td></tr>
+</tbody></table></div>
+<h3>巡視觀察表（也印在 handout.html 的教師版）</h3>
+<div class="tw"><table><thead><tr><th>觀察重點（錯誤類型）</th><th>人數</th><th>用於錯誤分析</th></tr></thead><tbody>
+<tr><td>數量積漏項或符號錯（程序）</td><td></td><td>☐</td></tr>
+<tr><td>坐標有 0 時用比值判斷平行（概念）</td><td></td><td>☐</td></tr>
+<tr><td>忘了開方（粗心）</td><td></td><td>☐</td></tr>
+<tr><td>x、y 次序調亂（程序）</td><td></td><td>☐</td></tr>
+<tr><td>餘弦是負數就當錯（概念）</td><td></td><td>☐</td></tr>
+<tr><td>中點坐標算錯（粗心）</td><td></td><td>☐</td></tr>
+<tr><td>其他：</td><td></td><td>☐</td></tr>
+</tbody></table></div>
+<h3>不同學生的支援</h3>
+<div class="tw"><table><thead><tr><th>學生情況</th><th>本節做法</th></tr></thead><tbody>
+<tr><td>基礎薄弱</td><td>從 A 層與提示階梯開始，先確認先備知識地圖中的舊知識；成功後逐步減少提示，不長期只做低層次題。</td></tr>
+<tr><td>動機不足</td><td>任務短而明確、可自選層次、先猜後驗，讓學生看到可達成的進步；不等同懶惰。</td></tr>
+<tr><td>疲累或注意力不足</td><td>每段都有短回應（手勢、拖滑桿）；任務分段；個別關心，持續異常疲倦依校方程序跟進，不當成紀律問題。</td></tr>
+<tr><td>能力較高</td><td>做 C 層的解釋、比較、推理與遷移；不固定安排為其他學生的助手。</td></tr>
+</tbody></table></div>
+<h2>D. 典型錯誤分析</h2>
+<p>以下均為「預期錯誤」（未取自真實學生作答），教師可換成當堂收集、去識別化的例子。</p>
+<h3>4-1 抓錯偵探：誰減誰？</h3>
+<ul>
+<li>題目：\(A(2,1,0)\)，\(B(0,3,1)\)，求 \(\overrightarrow{AB}\) 和 \(\vert \overrightarrow{AB}\vert \)。</li>
+<li>錯誤示例：\(\overrightarrow{AB}=A-B=(2,-2,-1)\) → \(\vert \overrightarrow{AB}\vert =\sqrt{4+4+1}=3\)（錯在第 1 步）</li>
+<li>可能原因：概念錯誤：應是「終點減始點」；長度碰巧一樣，但方向相反。</li>
+<li>診斷問題：這個解法哪一步開始出現問題？為甚麼這樣計算不正確？怎樣檢查答案是否合理？</li>
+<li>教師引導方式：不公開學生身份；先讓學生指出步驟，再追問成因，最後由學生修正。</li>
+<li>正確做法：\(\overrightarrow{AB}=B-A=(-2,2,1)\)，\(\vert \overrightarrow{AB}\vert =3\)</li>
+<li>修正後練習：把 3-3 的 \(DC\) 改成 2，再求 \(\vert \overrightarrow{DB_1}\vert \)</li>
+</ul>
+<h3>4-2 再抓一次：分母有幾個長度？</h3>
+<ul>
+<li>題目：\(\boldsymbol{a}=(1,1,0)\)，\(\boldsymbol{b}=(-1,0,2)\)，求 \(\cos\langle \boldsymbol{a},\boldsymbol{b}\rangle \)。</li>
+<li>錯誤示例：\(\boldsymbol{a}\cdot\boldsymbol{b}=-1\) → \(\cos\langle \boldsymbol{a},\boldsymbol{b}\rangle =\frac{-1}{\sqrt{2}}\)（錯在第 2 步）</li>
+<li>可能原因：粗心失誤：分母漏乘 \(\vert \boldsymbol{b}\vert =\sqrt{5}\)。</li>
+<li>診斷問題：這個解法哪一步開始出現問題？為甚麼這樣計算不正確？怎樣檢查答案是否合理？</li>
+<li>教師引導方式：不公開學生身份；先讓學生指出步驟，再追問成因，最後由學生修正。</li>
+<li>正確做法：\(\cos\langle \boldsymbol{a},\boldsymbol{b}\rangle =\frac{-1}{\sqrt{2}\times\sqrt{5}}=-\frac{\sqrt{10}}{10}\)</li>
+<li>修正後練習：把 3-3 的 \(DC\) 改成 2，再求 \(\vert \overrightarrow{DB_1}\vert \)</li>
+</ul>
+<h2>E. 出口題及評估</h2>
+<ul>
+<li>出口題：\(A(1,2,0)\)，\(B(3,0,1)\)，\(C(0,1,1)\)。(1) 求 \(\overrightarrow{AB}\) 和 \(\vert \overrightarrow{AB}\vert \)；(2) 求 \(\overrightarrow{AB}\cdot\overrightarrow{AC}\)；(3) \(\angle BAC\) 是銳角、直角還是鈍角？</li>
+<li>參考答案：(1) \((2,-2,1)\)，3；(2) 1；(3) 銳角（數量積大於 0）</li>
+<li>時間：2～3 分鐘，獨立完成。</li>
+</ul>
+<div class="tw"><table><thead><tr><th>結果</th><th>判準及下一節安排</th></tr></thead><tbody>
+<tr><td>已掌握</td><td>三小題全對，並以數量積的符號判斷角的類型 → 進入 1.2.1，可做第二關 C 層</td></tr>
+<tr><td>部分掌握</td><td>(1)(2) 對，(3) 只靠作圖或判斷錯 → 下一節課首做一題「用數量積判斷角的類型」</td></tr>
+<tr><td>尚未掌握</td><td>(1) 寫成 A−B 或長度錯 → 小組重做 1-2 與第一關 A 層，再做坐標轉換練習</td></tr>
+</tbody></table></div>
+<h2>F. 課後反思（上課後由教師依真實證據填寫）</h2>
+<ul>
+<li>本節課最有效的設計：</li>
+<li>學生最常見的困難：</li>
+<li>需要個別跟進的學生：</li>
+<li>下一節課的調整：</li>
+</ul>
+<h2>G. 螺旋設計與學習追蹤</h2>
+<p><b>本課型路徑</b>：能力提升螺旋：基礎辨識 → 獨立應用 → 變式比較 → 綜合解難</p>
+<div class="tw"><table><thead><tr><th>時間</th><th>階段</th><th>螺旋位置</th></tr></thead><tbody>
+<tr><td>0–6 分鐘</td><td>診斷起步題</td><td>基礎辨識</td></tr>
+<tr><td>6–11 分鐘</td><td>方法回顧與關鍵步驟</td><td>基礎辨識（方法與檢查）</td></tr>
+<tr><td>11–25 分鐘</td><td>分層練習兩輪＋巡視</td><td>獨立應用 → 變式比較</td></tr>
+<tr><td>25–35 分鐘</td><td>錯誤門診＋綜合解難</td><td>綜合解難</td></tr>
+<tr><td>35–40 分鐘</td><td>出口題＋自我評估</td><td>學習證據</td></tr>
+</tbody></table></div>
+<h3>1. 先備知識地圖</h3>
+<div class="tw"><table><thead><tr><th>舊知識</th><th>本課怎樣用</th><th>怎樣確認（哪一頁或哪一題）</th><th>不足時的補救</th></tr></thead><tbody>
+<tr><td>向量坐標＝終點減始點</td><td>寫出所有向量</td><td>1-2 診斷一</td><td>用數線例子對照，再做 4-1</td></tr>
+<tr><td>長度公式</td><td>求長度與夾角</td><td>1-3 診斷二</td><td>回到 2-1 第二步</td></tr>
+<tr><td>對稱點</td><td>讀點與坐標系</td><td>1-4 診斷三</td><td>畫出點與坐標平面，看哪個坐標變號</td></tr>
+</tbody></table></div>
+<h3>2. 螺旋深化路徑</h3>
+<ul>
+<li>學生已經理解：已學過坐標公式和坐標系的定義。</li>
+<li>本次新增的理解：把公式串成流程：建系 → 讀點 → 寫向量 → 計算；並知道坐標有 0 時要用倍數關係判斷平行。</li>
+<li>之後會延伸到：1.2.1 起用同一流程求角和距離。</li>
+</ul>
+<h3>3. 分層學習任務</h3>
+<div class="tw"><table><thead><tr><th>學生</th><th>任務層</th><th>支持方式</th><th>完成後</th></tr></thead><tbody>
+<tr><td>基礎薄弱</td><td>A 層</td><td>提示階梯、附圖與第一步線索</td><td>嘗試 B 層</td></tr>
+<tr><td>一般</td><td>B 層</td><td>必要時看提示</td><td>嘗試 C 層</td></tr>
+<tr><td>能力較高</td><td>C 層</td><td>少提示，要求解釋或比較</td><td>自編變式題</td></tr>
+</tbody></table></div>
+<p>分層指任務與支持不同，不是固定學生標籤；學生可依表現隨時換層。</p>
+<h3>4. 間隔重現計劃</h3>
+<div class="tw"><table><thead><tr><th>概念</th><th>何時再出現</th><th>形式（改變題目或情境）</th></tr></thead><tbody>
+<tr><td>建系與讀點</td><td>下一節（1.2.1）</td><td>在正方體中求兩直線所成的角</td></tr>
+<tr><td>數量積判斷角的類型</td><td>約一週後</td><td>延遲檢測：換三個點</td></tr>
+<tr><td>含未知數的垂直</td><td>約一個月後（1.2.2）</td><td>求法向量</td></tr>
+</tbody></table></div>
+<h3>5. 學習證據追蹤</h3>
+<ul>
+<li>出口題（當堂）：見 E 節。</li>
+<li>延遲檢測（約一週後，不提前通知、不先複習、不計分）：\(A(0,1,2)\)，\(B(2,3,1)\)，\(C(1,0,0)\)。求 \(\vert \overrightarrow{AB}\vert \)、\(\overrightarrow{AB}\cdot\overrightarrow{AC}\)，並判斷 \(\angle BAC\) 是銳角、直角還是鈍角。　答案：3；2；銳角</li>
+</ul>
+<div class="tw"><table><thead><tr><th>出口題</th><th>延遲檢測</th><th>判斷</th><th>跟進</th></tr></thead><tbody>
+<tr><td>已掌握</td><td>已掌握</td><td>真正掌握</td><td>進入更高層次任務</td></tr>
+<tr><td>已掌握</td><td>未掌握</td><td>短暫學會</td><td>增加間隔重現，改變情境再練</td></tr>
+<tr><td>未掌握</td><td>已掌握</td><td>延後學會</td><td>了解後續哪些安排有效</td></tr>
+<tr><td>未掌握</td><td>未掌握</td><td>尚未掌握</td><td>找出成因，小組或個別重建概念</td></tr>
+</tbody></table></div>
+<h2>教案品質檢查</h2>
+<ul>
+<li>☑ 是否具有明確、可觀察的學習目標？</li>
+<li>☑ 各教學階段的總時間是否為40分鐘？</li>
+<li>☑ 是否讓不同程度學生都有明確任務？</li>
+<li>☑ 是否設計至少兩個理解檢查點？</li>
+<li>☑ 是否安排學生獨立思考及解題？</li>
+<li>☑ 是否預測典型數學錯誤？</li>
+<li>☑ 是否提供分層支持？</li>
+<li>☑ 是否包含有效的出口題？</li>
+<li>☑ 是否說明如何利用學習證據調整教學？</li>
+<li>☑ 是否考慮教師實際工作量及課堂可行性？</li>
+<li>☑ 簡報是否至少 25 頁（含階段頁），最後一頁是否為本節核心知識小結？</li>
+<li>☑ 是否標明各階段在螺旋路徑的位置？</li>
+<li>☑ 是否有先備知識地圖？</li>
+<li>☑ 是否說明本次比過去增加了哪些新理解？</li>
+<li>☑ 是否規劃間隔重現？</li>
+<li>☑ 是否設計延遲檢測，能分辨短暫學會與真正掌握？</li>
+</ul></main></body></html>
